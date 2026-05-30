@@ -1,0 +1,11 @@
+Data/
+data/
+
+.venv/
+__pycache__/
+
+*.pth
+*.pt
+
+.ipynb_checkpoints/
+.vscode/
