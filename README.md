@@ -95,13 +95,7 @@ Les modèles ont été évalués à l'aide des métriques suivantes :
 - Recall
 - F1-score
 
-Les meilleurs résultats ont été obtenus avec :
 
-| Modèle | Accuracy |
-|----------|----------|
-| XGBoost | 61 % |
-| LSTM | 61 % |
-| CamemBERT | 59 % |
 
 Cette étude met en évidence l'intérêt des modèles de Deep Learning et des Transformers pour les tâches d'analyse des sentiments en français.
 
@@ -126,12 +120,6 @@ Fonctionnalités :
 ```bash
 git clone https://github.com/Nourbenmiled/tahoma-app-store-sentiment-analysis.git
 cd tahoma-app-store-sentiment-analysis
-```
-
-### 2. Installer les dépendances
-
-```bash
-pip install -r requirements.txt
 ```
 
 ### 3. Lancer l'application
