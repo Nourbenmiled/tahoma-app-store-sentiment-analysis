@@ -5,9 +5,9 @@ import pickle
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-# =====================================================
+
 # CONFIG
-# =====================================================
+
 
 st.set_page_config(
     page_title="TaHoma Sentiment Analysis",
@@ -15,9 +15,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# =====================================================
-# STYLE PROFESSIONNEL (THEME CLAIR & VISIBILITÉ MAX)
-# =====================================================
+
 
 st.markdown("""
 <style>
@@ -135,9 +133,8 @@ model, tokenizer, label_encoder = load_all()
 # =====================================================
 MAX_LEN = model.input_shape[1]
 
-# =====================================================
-# DEBUG INFO (SIDEBAR ACCORDÉON CLAIR)
-# =====================================================
+
+# DEBUG INFO
 with st.sidebar:
     st.markdown("<h2 style='font-size: 1.5rem; font-weight:700;'>⚙️ Paramètres du modèle</h2>", unsafe_allow_html=True)
     st.markdown("---")
@@ -145,9 +142,9 @@ with st.sidebar:
     st.write(f"**Output Shape :** {model.output_shape}")
     st.write(f"**MAX_LEN :** {MAX_LEN}")
 
-# =====================================================
-# HEADER (TRÈS VISIBLE)
-# =====================================================
+
+# HEADER 
+
 st.markdown('<p class="main-title">📱 Analyse des sentiments — TaHoma Somfy</p>', unsafe_allow_html=True)
 st.markdown('<p class="sub-title">Analyse avancée de la satisfaction client basée sur un réseau de neurones BiLSTM.</p>', unsafe_allow_html=True)
 
